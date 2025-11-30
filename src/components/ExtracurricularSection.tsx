@@ -124,7 +124,7 @@ export const ExtracurricularSection = () => {
               className="aspect-video rounded-lg overflow-hidden shadow-card border border-border"
             >
               <img
-                src="/images/photo_hackathon.jpg"
+                src="/photo_hackathon.jpeg"
                 alt="Hackathon 1"
                 className="w-full h-full object-cover"
               />
@@ -134,7 +134,7 @@ export const ExtracurricularSection = () => {
               className="aspect-video rounded-lg overflow-hidden shadow-card border border-border"
             >
               <img
-                src="/images/photo_hackaton2.jpg"
+                src="/photo_hackathon2.jpeg"
                 alt="Hackathon 2"
                 className="w-full h-full object-cover"
               />

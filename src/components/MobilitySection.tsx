@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Plane, MapPin, ArrowRight, Award } from "lucide-react";
+import { Plane, MapPin, ArrowRight, Award, Leaf } from "lucide-react"; // <--- J'ai ajouté 'Leaf' ici
 
 export const MobilitySection = () => {
   return (
@@ -58,7 +58,7 @@ export const MobilitySection = () => {
                 </div>
               </div>
 
-              {/* Arrow */}
+              {/* Arrow & Info Central (C'est ici qu'on modifie) */}
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
@@ -76,6 +76,14 @@ export const MobilitySection = () => {
                 <span className="text-xs text-muted-foreground font-medium">
                   Double Diplôme
                 </span>
+
+                {/* --- NOUVEAU : EMPREINTE CARBONE --- */}
+                <div className="mt-1 flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2 py-1 rounded-full" title="Empreinte carbone estimée">
+                    <Leaf size={12} className="text-green-600" />
+                    <span className="text-[10px] font-semibold text-green-700">~500kg CO₂</span>
+                </div>
+                {/* ----------------------------------- */}
+
               </motion.div>
 
               {/* ENSEEIHT */}
@@ -112,7 +120,7 @@ export const MobilitySection = () => {
             >
               <Award className="text-accent" size={24} />
               <p className="text-center text-foreground/80">
-                <span className="font-semibold">Préparation CPGE:</span> MPSI -
+                <span className="font-semibold">Classes préparatoires aux grandes écoles : C.P.G.E</span> MPSI -
                 MP au Lycée Moulay Idriss, Fès (2021-2023)
               </p>
             </motion.div>

@@ -9,44 +9,56 @@
 
 @layer base {
   :root {
-    --background: 210 25% 98%;
-    --foreground: 210 30% 15%;
+    /* --- COULEUR DE FOND (Blanc) --- */
+    --background: 0 0% 100%;
+    
+    /* --- COULEUR DE TEXTE PRINCIPAL (Bleu Foncé) --- */
+    --foreground: 240 63% 16%; 
 
+    /* Cartes (fonds blancs) */
     --card: 0 0% 100%;
-    --card-foreground: 210 30% 15%;
+    --card-foreground: 240 63% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 30% 15%;
+    --popover-foreground: 240 63% 16%;
 
-    --primary: 200 85% 45%;
-    --primary-foreground: 0 0% 100%;
+    /* --- COULEUR PRIMAIRE (Le Bleu Foncé) --- */
+    --primary: 240 63% 16%;
+    --primary-foreground: 0 0% 100%; /* Texte blanc sur fond bleu */
 
-    --secondary: 200 30% 94%;
-    --secondary-foreground: 200 85% 35%;
+    /* --- COULEUR SECONDAIRE (Gris très clair bleuté pour varier) --- */
+    --secondary: 240 20% 96%;
+    --secondary-foreground: 240 63% 16%;
 
-    --muted: 200 20% 96%;
-    --muted-foreground: 210 15% 45%;
+    --muted: 240 10% 96%;
+    --muted-foreground: 240 20% 45%;
 
-    --accent: 340 75% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* --- COULEUR D'ACCENT (Le Jaune Or) --- */
+    --accent: 45 93% 45%;
+    --accent-foreground: 240 63% 16%; /* Texte bleu sur fond jaune */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 200 20% 88%;
-    --input: 200 20% 88%;
-    --ring: 340 75% 55%;
+    --border: 240 20% 90%;
+    --input: 240 20% 90%;
+    --ring: 45 93% 45%; /* Le cercle de focus devient jaune */
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(200 85% 45%) 0%, hsl(200 75% 55%) 50%, hsl(200 85% 45%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(340 75% 55%) 0%, hsl(340 80% 60%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(200 25% 98%) 100%);
+    /* --- GRADIENTS --- */
+    /* Hero : Un dégradé subtil de bleu foncé */
+    --gradient-hero: linear-gradient(135deg, hsl(240 63% 16%) 0%, hsl(240 60% 25%) 100%);
     
-    --shadow-soft: 0 4px 20px -4px hsl(200 85% 45% / 0.15);
-    --shadow-card: 0 8px 30px -8px hsl(200 85% 45% / 0.12);
-    --shadow-accent: 0 8px 25px -5px hsl(340 75% 55% / 0.35);
+    /* Accent : Dégradé de Jaune Or */
+    --gradient-accent: linear-gradient(135deg, hsl(45 93% 45%) 0%, hsl(40 100% 50%) 100%);
+    
+    /* Card : Blanc vers très léger gris */
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(240 10% 98%) 100%);
+    
+    --shadow-soft: 0 4px 20px -4px hsl(240 63% 16% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(240 63% 16% / 0.1);
+    --shadow-accent: 0 8px 25px -5px hsl(45 93% 45% / 0.4);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -61,35 +73,36 @@
   }
 
   .dark {
-    --background: 210 25% 10%;
-    --foreground: 200 20% 98%;
+    /* J'ai adapté le mode sombre pour qu'il reste lisible tout en gardant ton identité */
+    --background: 240 63% 10%; /* Fond très foncé (Bleu nuit presque noir) */
+    --foreground: 0 0% 98%;
 
-    --card: 210 25% 13%;
-    --card-foreground: 200 20% 98%;
+    --card: 240 63% 13%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 210 25% 13%;
-    --popover-foreground: 200 20% 98%;
+    --popover: 240 63% 13%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 200 75% 55%;
-    --primary-foreground: 210 25% 10%;
+    --primary: 45 93% 45%; /* En mode sombre, le jaune devient la couleur primaire pour ressortir */
+    --primary-foreground: 240 63% 16%;
 
-    --secondary: 210 20% 18%;
-    --secondary-foreground: 200 20% 98%;
+    --secondary: 240 40% 20%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 20% 18%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 240 40% 20%;
+    --muted-foreground: 240 20% 70%;
 
-    --accent: 340 75% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 93% 45%;
+    --accent-foreground: 240 63% 16%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 210 20% 22%;
-    --input: 210 20% 22%;
-    --ring: 340 75% 55%;
+    --border: 240 40% 25%;
+    --input: 240 40% 25%;
+    --ring: 45 93% 45%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(210 25% 10%) 0%, hsl(210 25% 18%) 50%, hsl(210 25% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(240 63% 10%) 0%, hsl(240 63% 15%) 100%);
     --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
     --shadow-card: 0 8px 30px -8px hsl(0 0% 0% / 0.5);
 

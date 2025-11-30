@@ -20,10 +20,11 @@ export const WelcomeSection = () => {
             {/* Profile Photo Placeholder */}
             <div className="relative mb-8">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-secondary/20 border-4 border-accent overflow-hidden shadow-accent flex items-center justify-center">
-                {/* Replace with your photo */}
-                <span className="text-primary-foreground/60 text-sm text-center px-4">
-                  Insérez votre photo ici
-                </span>
+                <img 
+                src="/img_cv.jpg" 
+                alt="Mhamed El Ghali Bellahbib" 
+                className="w-full h-full object-cover"
+              />
               </div>
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg animate-float">
                 <span className="text-2xl">👋</span>

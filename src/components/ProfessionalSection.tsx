@@ -22,14 +22,16 @@ export const ProfessionalSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* PPP Section */}
+        {/* Changement ici : grid-cols-2 pour donner plus de largeur aux éléments */}
+        <div className="grid md:grid-cols-2 gap-8">
+          
+          {/* PPP Section - Prend maintenant 50% de la largeur */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
+            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift flex flex-col"
           >
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
               <FileCode className="text-primary" size={24} />
@@ -37,53 +39,24 @@ export const ProfessionalSection = () => {
             <h3 className="text-xl font-semibold text-foreground mb-3">
               Projet Personnel & Professionnel
             </h3>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-sm mb-6 flex-grow">
               Découvrez mon projet personnel et professionnel détaillant mes
-              objectifs de carrière et ma vision.
+              objectifs de carrière, ma vision à long terme et les compétences 
+              que je souhaite développer.
             </p>
-            <Button variant="outline" className="w-full gap-2">
+            <Button variant="outline" className="w-full gap-2 mt-auto">
               <Download size={18} />
               Télécharger PPP
             </Button>
           </motion.div>
 
-          {/* CV Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
-          >
-            <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-              <FileText className="text-accent" size={24} />
-            </div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">
-              Curriculum Vitae
-            </h3>
-            <p className="text-muted-foreground text-sm mb-6">
-              Téléchargez mon CV en français ou en anglais pour découvrir mon
-              parcours complet.
-            </p>
-            <div className="flex flex-col gap-3">
-              <Button variant="default" className="w-full gap-2">
-                <Download size={18} />
-                CV Français
-              </Button>
-              <Button variant="secondary" className="w-full gap-2">
-                <Download size={18} />
-                CV English
-              </Button>
-            </div>
-          </motion.div>
-
-          {/* Internship Section */}
+          {/* Internship Section - Remonté ici pour prendre 50% de la largeur */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
+            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift flex flex-col"
           >
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
               <Building2 className="text-primary" size={24} />
@@ -100,9 +73,9 @@ export const ProfessionalSection = () => {
                 Mohammédia, Maroc | Juillet - Août 2024
               </p>
             </div>
-            <p className="text-muted-foreground text-sm mb-4">
+            <p className="text-muted-foreground text-sm mb-4 flex-grow">
               Prédiction des ventes avec ML, segmentation client par clustering,
-              et création de dashboards interactifs avec Streamlit.
+              et création de dashboards interactifs avec Streamlit pour l'aide à la décision.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {["Python", "SQL Server", "ML", "ERP"].map((tag) => (
@@ -114,11 +87,57 @@ export const ProfessionalSection = () => {
                 </span>
               ))}
             </div>
-            <Button variant="outline" className="w-full gap-2">
-              <Download size={18} />
-              Rapport de Stage
-            </Button>
+            <a href="/Rapport_Stage__final (3).pdf" download="Rapport_Stage_Cogitas.pdf" className="w-full mt-auto">
+                <Button variant="outline" className="w-full gap-2">
+                <Download size={18} />
+                Rapport de Stage
+                </Button>
+            </a>
           </motion.div>
+
+          {/* CV Section - Prend toute la largeur en bas, mais compact */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="md:col-span-2 bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
+          >
+            <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                
+                {/* Partie Gauche : Info */}
+                <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-2">
+                        <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                        <FileText className="text-accent" size={20} />
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground">
+                        CV
+                        </h3>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                        Consultez mon parcours complet en format PDF.
+                    </p>
+                </div>
+
+                {/* Partie Droite : Boutons séparés gauche/droite ou côte à côte */}
+                <div className="w-full md:w-auto flex flex-row justify-between md:justify-end gap-4 mt-4 md:mt-0">
+                    <a href="/cv_latex__Francais__Copy22_ (3).pdf" download="CV_Mhamed_FR.pdf">
+                        <Button variant="default" className="gap-2 min-w-[140px]">
+                            <Download size={18} />
+                            CV Français
+                        </Button>
+                    </a>
+                    <a href="/cv_en.pdf" download="CV_Mhamed_EN.pdf">
+                        <Button variant="secondary" className="gap-2 min-w-[140px]">
+                            <Download size={18} />
+                            CV English
+                        </Button>
+                    </a>
+                </div>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </section>
