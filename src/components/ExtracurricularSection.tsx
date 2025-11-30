@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Trophy, Lightbulb, ImageIcon } from "lucide-react";
+import { Users, Trophy, Lightbulb } from "lucide-react";
 
 const activities = [
   {
@@ -107,7 +107,7 @@ export const ExtracurricularSection = () => {
           ))}
         </motion.div>
 
-        {/* Photo Gallery Placeholder */}
+        {/* Photo Gallery */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -115,26 +115,31 @@ export const ExtracurricularSection = () => {
           transition={{ duration: 0.6 }}
           className="bg-card rounded-xl p-8 shadow-card border border-border"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-            <ImageIcon className="text-accent" size={24} />
-            Galerie Photos
+          <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
+            📸 Galerie Photos - Hackathons
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((index) => (
-              <div
-                key={index}
-                className="aspect-square bg-secondary rounded-lg border-2 border-dashed border-border flex items-center justify-center hover:border-accent transition-colors cursor-pointer"
-              >
-                <div className="text-center">
-                  <ImageIcon className="text-muted-foreground mx-auto mb-2" size={32} />
-                  <p className="text-xs text-muted-foreground">Photo {index}</p>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="aspect-video rounded-lg overflow-hidden shadow-card border border-border"
+            >
+              <img
+                src="/images/photo_hackathon.jpg"
+                alt="Hackathon 1"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="aspect-video rounded-lg overflow-hidden shadow-card border border-border"
+            >
+              <img
+                src="/images/photo_hackaton2.jpg"
+                alt="Hackathon 2"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">
-            Ajoutez vos photos d'activités parascolaires ici
-          </p>
         </motion.div>
       </div>
     </section>
