@@ -6,44 +6,66 @@ const semesters = [
     title: "Semestre 1 - ENSIAS",
     period: "Sept 2023 - Jan 2024",
     modules: [
-      "Algorithmique et Structures de Données",
-      "Programmation Orientée Objet (Java)",
-      "Bases de Données Relationnelles",
-      "Mathématiques pour l'Informatique",
-      "Systèmes d'Exploitation",
+      "Business Intelligence Analytics",
+      "Algorithmique et structures de données",
+      "Architectures des ordinateurs",
+      "Éléments de recherche opérationnelle",
+      "Éthique, métiers & projet de challenge",
+      "Gestion, économie et finance 1",
+      "Langue, communication et développement personnel",
+      "Statistiques et probabilité appliquée",
     ],
   },
   {
     title: "Semestre 2 - ENSIAS",
     period: "Fév 2024 - Juin 2024",
     modules: [
-      "Business Intelligence",
-      "Data Warehousing",
-      "Statistiques et Probabilités",
-      "Développement Web (HTML/CSS/JS)",
-      "Réseaux Informatiques",
+      "Base de données",
+      "Économie, gestion et finance 2",
+      "Fondements de l'informatique",
+      "Programmation orientée objet",
+      "Réseaux et système",
+      "Langue, communication et développement personnel 2",
     ],
   },
   {
     title: "Semestre 3 - ENSIAS",
     period: "Sept 2024 - Jan 2025",
     modules: [
-      "Machine Learning",
-      "Big Data Technologies",
-      "Data Mining",
-      "Python pour la Data Science",
-      "Visualisation de Données",
+      "Administration systèmes",
+      "Culture entrepreneuriale",
+      "Langues, communication et développement personnel 2i",
+      "Machine learning",
+      "Modèle TCP/IP architecture client/serveur",
+      "Statistiques et analyse de données",
+      "Systèmes d'information et modélisation objet",
+      "Technologies et développement web",
     ],
   },
   {
-    title: "Semestre 4 - ENSEEIHT",
+    title: "Semestre 4 - ENSIAS",
+    period: "Fév 2025 - Juin 2025",
+    modules: [
+      "Conduite de projets informatiques & processus développement",
+      "Data analytics",
+      "Databases for BI and Analytics",
+      "Langue, communication et développement personnel IV",
+      "Management avancé",
+      "Module d'ouverture 2",
+      "Projet fédérateur de deuxième année",
+      "Sécurité et cloud computing",
+    ],
+  },
+  {
+    title: "Semestre 5 - ENSEEIHT",
     period: "Sept 2025 - Jan 2026",
     modules: [
-      "High Performance Computing (HPC)",
-      "Calcul Parallèle",
-      "Architecture des Supercalculateurs",
-      "Optimisation Numérique",
-      "Cloud Computing",
+      "Soft and Human Skills 3 (English, Spanish, Sport, Careers and Management)",
+      "Programmation Fonctionnelle et Traduction des Langages",
+      "Théorie des Automates et des Langages, Théorie des Graphes",
+      "Génie du Logiciel et des Systèmes",
+      "Optimisation et RO",
+      "Systèmes concurrents et communicants",
     ],
   },
 ];
@@ -97,7 +119,7 @@ export const EngineeringSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-6"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {semesters.map((semester, index) => (
             <motion.div
@@ -109,23 +131,23 @@ export const EngineeringSection = () => {
                 <h3 className="text-lg font-semibold text-foreground">
                   {semester.title}
                 </h3>
-                <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                  <Calendar size={14} />
-                  {semester.period}
-                </div>
+              </div>
+              <div className="flex items-center gap-1 text-sm text-muted-foreground mb-4">
+                <Calendar size={14} />
+                {semester.period}
               </div>
 
-              <ul className="space-y-3">
+              <ul className="space-y-2">
                 {semester.modules.map((module, moduleIndex) => (
                   <li
                     key={moduleIndex}
-                    className="flex items-start gap-3 text-foreground/80"
+                    className="flex items-start gap-2 text-foreground/80"
                   >
                     <BookOpen
-                      size={16}
+                      size={14}
                       className="text-accent mt-1 flex-shrink-0"
                     />
-                    <span className="text-sm">{module}</span>
+                    <span className="text-xs">{module}</span>
                   </li>
                 ))}
               </ul>
