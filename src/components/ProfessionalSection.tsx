@@ -44,10 +44,20 @@ export const ProfessionalSection = () => {
               objectifs de carrière, ma vision à long terme et les compétences 
               que je souhaite développer.
             </p>
-            <Button variant="outline" className="w-full gap-2 mt-auto">
-              <Download size={18} />
-              Télécharger PPP
-            </Button>
+            
+            {/* --- MODIFICATION ICI : Ajout du lien vers le fichier ppp_pdf.pdf --- */}
+            <a 
+              href="/ppp_pdf.pdf" 
+              download="PPP_Mhamed_Bellahbib.pdf" 
+              className="w-full mt-auto"
+            >
+              <Button variant="outline" className="w-full gap-2">
+                <Download size={18} />
+                Télécharger PPP
+              </Button>
+            </a>
+            {/* ------------------------------------------------------------------ */}
+
           </motion.div>
 
           {/* Internship Section - Remonté ici pour prendre 50% de la largeur */}
@@ -87,7 +97,7 @@ export const ProfessionalSection = () => {
                 </span>
               ))}
             </div>
-            <a href="/Rapport_Stage__final (3).pdf" download="Rapport_Stage_Cogitas.pdf" className="w-full mt-auto">
+            <a href="/Rapport_Stage__final.pdf" download="Rapport_Stage_Cogitas.pdf" className="w-full mt-auto">
                 <Button variant="outline" className="w-full gap-2">
                 <Download size={18} />
                 Rapport de Stage
@@ -128,7 +138,8 @@ export const ProfessionalSection = () => {
                             CV Français
                         </Button>
                     </a>
-                    <a href="/cv_en.pdf" download="CV_Mhamed_EN.pdf">
+                    
+                    <a href="/cv_latex__anglais.pdf" download="CV_Mhamed_Ang.pdf">
                         <Button variant="secondary" className="gap-2 min-w-[140px]">
                             <Download size={18} />
                             CV English

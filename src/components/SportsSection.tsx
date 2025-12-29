@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Dribbble, Waves, CircleDot, Disc, Sparkles } from "lucide-react";
+import { Dribbble, Waves, TrendingUp, Video, Sparkles } from "lucide-react";
 
 const activities = [
   {
@@ -15,14 +15,14 @@ const activities = [
     color: "from-blue-500 to-cyan-600",
   },
   {
-    name: "Billard",
-    icon: CircleDot,
+    name: "Marché Financier",
+    icon: TrendingUp,
     description: "",
     color: "from-amber-500 to-orange-600",
   },
   {
-    name: "Ultimate",
-    icon: Disc,
+    name: "Montage Vidéo",
+    icon: Video,
     description: "",
     color: "from-purple-500 to-indigo-600",
   },
@@ -46,10 +46,8 @@ export const SportsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Loisirs & <span className="text-gradient">Passions</span>
           </h2>
-          {/* Le paragraphe a été supprimé ici comme demandé */}
         </motion.div>
 
-        {/* Modification ici : grid-cols-2 pour tablette et lg:grid-cols-4 pour grand écran pour aligner les 4 items */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {activities.map((activity, index) => (
             <motion.div
