@@ -132,7 +132,7 @@ export const ProfessionalSection = () => {
 
                 {/* Partie Droite : Boutons séparés gauche/droite ou côte à côte */}
                 <div className="w-full md:w-auto flex flex-row justify-between md:justify-end gap-4 mt-4 md:mt-0">
-                    <a href="/cv_latex__Francais__Copy22_ (3).pdf" download="CV_Mhamed_FR.pdf">
+                    <a href="/CV_Mhamed_FR.pdf" download="CV_Mhamed_FR.pdf">
                         <Button variant="default" className="gap-2 min-w-[140px]">
                             <Download size={18} />
                             CV Français
