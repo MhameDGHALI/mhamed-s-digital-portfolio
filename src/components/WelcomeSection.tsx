@@ -84,15 +84,15 @@ export const WelcomeSection = () => {
             </h2>
 
             {/* Video Placeholder */}
-            <div className="w-full aspect-video bg-primary-foreground/10 rounded-xl border-2 border-dashed border-primary-foreground/30 flex flex-col items-center justify-center hover:border-accent transition-colors">
-              <div className="w-16 h-16 rounded-full bg-accent/80 flex items-center justify-center mb-4 cursor-pointer hover:bg-accent transition-colors">
-                <Play size={32} className="ml-1" />
-              </div>
-              <p className="text-primary-foreground/60 text-sm text-center px-4">
-                Insérez votre vidéo pitch ici
-                <br />
-                <span className="text-xs">(3 minutes max)</span>
-              </p>
+            <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-accent/30 bg-black">
+              <video 
+                controls 
+                className="w-full h-full object-contain"
+                poster="/img_cv.jpg"
+              >
+                <source src="/video_presentation.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas la lecture de vidéos.
+              </video>
             </div>
 
             {/* Location Badge */}
