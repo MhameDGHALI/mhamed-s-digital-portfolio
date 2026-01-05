@@ -80,7 +80,7 @@ export const MobilitySection = () => {
                 {/* --- NOUVEAU : EMPREINTE CARBONE --- */}
                 <div className="mt-1 flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2 py-1 rounded-full" title="Empreinte carbone estimée">
                     <Leaf size={12} className="text-green-600" />
-                    <span className="text-[10px] font-semibold text-green-700">~500kg CO₂</span>
+                    <span className="text-[10px] font-semibold text-green-700">~616,4kg CO₂</span>
                 </div>
                 {/* ----------------------------------- */}
 
