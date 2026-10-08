@@ -72,6 +72,12 @@ docs/           decisions, data quality, benchmark, experiment report ...
     ],
     figures: [
       {
+        heading: "Architecture",
+        items: [
+          { src: "/projects/rider-pay/architecture.png", caption: "End-to-end architecture of the platform" },
+        ],
+      },
+      {
         heading: "Power BI dashboard",
         items: [
           { src: "/projects/rider-pay/dashboard_01_economy.png", caption: "Page 1 · Trip economics: driver pay and platform take rate" },
