@@ -10,20 +10,20 @@ export const Footer = () => {
               Mhamed El Ghali <span className="text-accent">Bellahbib</span>
             </h3>
             <p className="text-primary-foreground/70 text-sm">
-              Étudiant en ingénierie informatique spécialisé en Business
-              Intelligence, HPC et Big Data.
+              Computer engineering student specializing in Business
+              Intelligence, Data Engineering, HPC and Big Data.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Liens Rapides</h4>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="#welcome"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
                 >
-                  Accueil
+                  Home
                 </a>
               </li>
               <li>
@@ -31,15 +31,15 @@ export const Footer = () => {
                   href="#engineering"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
                 >
-                  Formation
+                  Education
                 </a>
               </li>
               <li>
                 <a
-                  href="#professional"
+                  href="#projects"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
                 >
-                  Projets Professionnels
+                  Projects
                 </a>
               </li>
             </ul>
@@ -83,7 +83,7 @@ export const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-sm text-primary-foreground/60 flex items-center justify-center gap-1">
-            © {new Date().getFullYear()} Mhamed El Ghali Bellahbib. Fait avec
+            © {new Date().getFullYear()} Mhamed El Ghali Bellahbib. Made with
             <Heart size={14} className="text-accent" />
           </p>
         </div>

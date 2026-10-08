@@ -9,19 +9,19 @@ const activities = [
     color: "from-green-500 to-emerald-600",
   },
   {
-    name: "Natation",
+    name: "Swimming",
     icon: Waves,
     description: "",
     color: "from-blue-500 to-cyan-600",
   },
   {
-    name: "Marché Financier",
+    name: "Financial Markets",
     icon: TrendingUp,
     description: "",
     color: "from-amber-500 to-orange-600",
   },
   {
-    name: "Montage Vidéo",
+    name: "Video Editing",
     icon: Video,
     description: "",
     color: "from-purple-500 to-indigo-600",
@@ -41,10 +41,10 @@ export const SportsSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Sparkles size={18} />
-            Temps Libre
+            Free Time
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Loisirs & <span className="text-gradient">Passions</span>
+            Hobbies & <span className="text-gradient">Interests</span>
           </h2>
         </motion.div>
 

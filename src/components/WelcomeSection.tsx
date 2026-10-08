@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Briefcase } from "lucide-react";
 
 export const WelcomeSection = () => {
   return (
@@ -39,10 +39,15 @@ export const WelcomeSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 text-center lg:text-left max-w-2xl">
-              Étudiant en ingénierie informatique, passionné par le Big Data, le
-              HPC et la Business Intelligence. En double diplôme ENSIAS (Maroc)
+              Computer engineering student passionate about Data Engineering,
+              Business Intelligence and Big Data. Double degree ENSIAS (Morocco)
               → ENSEEIHT (Toulouse).
             </p>
+
+            <div className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <Briefcase size={16} />
+              Seeking a 6-month end-of-studies internship (PFE) · starting early 2027 · Data / BI / Analytics Engineering
+            </div>
 
             {/* Contact Info & Location */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start items-center">

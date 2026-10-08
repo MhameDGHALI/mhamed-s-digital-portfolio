@@ -14,14 +14,13 @@ export const MobilitySection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Plane size={18} />
-            Mobilité Internationale
+            International Mobility
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Double <span className="text-gradient">Diplôme</span>
+            Double <span className="text-gradient">Degree</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Une expérience académique internationale enrichissante entre le Maroc
-            et la France.
+            An international academic path between Morocco and France.
           </p>
         </motion.div>
 
@@ -39,21 +38,20 @@ export const MobilitySection = () => {
               <div className="flex-1 text-center md:text-left">
                 <div className="inline-flex items-center gap-2 text-accent mb-2">
                   <MapPin size={18} />
-                  <span className="text-sm font-medium">Rabat, Maroc</span>
+                  <span className="text-sm font-medium">Rabat, Morocco</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">
                   ENSIAS
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  École Nationale Supérieure d'Informatique et d'Analyse des
-                  Systèmes
+                  National School of Computer Science and Systems Analysis
                 </p>
                 <div className="bg-primary/10 rounded-lg p-4">
                   <p className="text-sm font-medium text-primary">
                     Business Intelligence & Analytics
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Sept 2023 – Juin 2026
+                    Sep 2023 – Jun 2026
                   </p>
                 </div>
               </div>
@@ -74,11 +72,11 @@ export const MobilitySection = () => {
                   className="text-accent hidden md:block"
                 />
                 <span className="text-xs text-muted-foreground font-medium">
-                  Double Diplôme
+                  Double Degree
                 </span>
 
                 {/* --- NOUVEAU : EMPREINTE CARBONE --- */}
-                <div className="mt-1 flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2 py-1 rounded-full" title="Empreinte carbone estimée">
+                <div className="mt-1 flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2 py-1 rounded-full" title="Estimated carbon footprint">
                     <Leaf size={12} className="text-green-600" />
                     <span className="text-[10px] font-semibold text-green-700">~616,4kg CO₂</span>
                 </div>
@@ -96,15 +94,15 @@ export const MobilitySection = () => {
                   INP-ENSEEIHT
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  École Nationale Supérieure d'Électrotechnique, d'Électronique,
-                  d'Informatique
+                  National School of Electrical Engineering, Electronics,
+                  Computer Science
                 </p>
                 <div className="bg-accent/10 rounded-lg p-4">
                   <p className="text-sm font-medium text-accent">
                     HPC & Big Data
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Sept 2025 – Juin 2027
+                    Sep 2025 – Jun 2027
                   </p>
                 </div>
               </div>
@@ -120,8 +118,8 @@ export const MobilitySection = () => {
             >
               <Award className="text-accent" size={24} />
               <p className="text-center text-foreground/80">
-                <span className="font-semibold">Classes préparatoires aux grandes écoles : C.P.G.E</span> MPSI -
-                MP au Lycée Moulay Idriss, Fès (2021-2023)
+                <span className="font-semibold">Preparatory classes for the Grandes Écoles (CPGE):</span> MPSI -
+                MP at Lycée Moulay Idriss, Fès (2021-2023)
               </p>
             </motion.div>
           </motion.div>

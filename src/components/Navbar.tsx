@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Accueil", href: "#welcome" },
-  { label: "Formation", href: "#engineering" },
-  { label: "Mobilité", href: "#mobility" },
-  { label: "Projets Pro", href: "#professional" },
-  { label: "Activités", href: "#extracurricular" },
-  { label: "Sports", href: "#sports" },
+  { label: "Home", href: "#welcome" },
+  { label: "Education", href: "#engineering" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#professional" },
+  { label: "Mobility", href: "#mobility" },
+  { label: "Activities", href: "#extracurricular" },
+  { label: "Hobbies", href: "#hobbies" },
 ];
 
 export const Navbar = () => {

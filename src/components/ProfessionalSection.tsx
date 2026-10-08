@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase, Download, FileText, FileCode, Building2 } from "lucide-react";
+import { Briefcase, Download, FileText, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const ProfessionalSection = () => {
@@ -15,51 +15,16 @@ export const ProfessionalSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Briefcase size={18} />
-            Projet Professionnel
+            Experience
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Parcours <span className="text-gradient">Professionnel</span>
+            Professional <span className="text-gradient">Experience</span>
           </h2>
         </motion.div>
 
         {/* Changement ici : grid-cols-2 pour donner plus de largeur aux éléments */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-8 max-w-4xl mx-auto">
           
-          {/* PPP Section - Prend maintenant 50% de la largeur */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift flex flex-col"
-          >
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-              <FileCode className="text-primary" size={24} />
-            </div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">
-              Projet Personnel & Professionnel
-            </h3>
-            <p className="text-muted-foreground text-sm mb-6 flex-grow">
-              Découvrez mon projet personnel et professionnel détaillant mes
-              objectifs de carrière, ma vision à long terme et les compétences 
-              que je souhaite développer.
-            </p>
-            
-            {/* --- MODIFICATION ICI : Ajout du lien vers le fichier ppp_pdf.pdf --- */}
-            <a 
-              href="/ppp_pdf.pdf" 
-              download="PPP_Mhamed_Bellahbib.pdf" 
-              className="w-full mt-auto"
-            >
-              <Button variant="outline" className="w-full gap-2">
-                <Download size={18} />
-                Télécharger PPP
-              </Button>
-            </a>
-            {/* ------------------------------------------------------------------ */}
-
-          </motion.div>
-
           {/* Internship Section - Remonté ici pour prendre 50% de la largeur */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -72,20 +37,20 @@ export const ProfessionalSection = () => {
               <Building2 className="text-primary" size={24} />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-3">
-              Stage
+              Internship
             </h3>
             <div className="mb-4">
               <p className="text-sm font-medium text-foreground">
-                Data Scientist Stagiaire
+                Data Scientist Intern
               </p>
               <p className="text-sm text-accent">Cogitas Solutions</p>
               <p className="text-xs text-muted-foreground">
-                Mohammédia, Maroc | Juillet - Août 2024
+                Mohammédia, Morocco | July - August 2024
               </p>
             </div>
             <p className="text-muted-foreground text-sm mb-4 flex-grow">
-              Prédiction des ventes avec ML, segmentation client par clustering,
-              et création de dashboards interactifs avec Streamlit pour l'aide à la décision.
+              Sales forecasting with ML, customer segmentation through clustering,
+              and interactive Streamlit dashboards for decision support.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {["Python", "SQL Server", "ML", "ERP"].map((tag) => (
@@ -97,21 +62,15 @@ export const ProfessionalSection = () => {
                 </span>
               ))}
             </div>
-            <a href="/Rapport_Stage__final.pdf" download="Rapport_Stage_Cogitas.pdf" className="w-full mt-auto">
-                <Button variant="outline" className="w-full gap-2">
-                <Download size={18} />
-                Rapport de Stage
-                </Button>
-            </a>
           </motion.div>
 
-          {/* CV Section - Prend toute la largeur en bas, mais compact */}
+          {/* CV Section - compact */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-2 bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
+            className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
           >
             <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
                 
@@ -122,27 +81,20 @@ export const ProfessionalSection = () => {
                         <FileText className="text-accent" size={20} />
                         </div>
                         <h3 className="text-xl font-semibold text-foreground">
-                        CV
+                        Résumé
                         </h3>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                        Consultez mon parcours complet en format PDF.
+                        Download my full résumé as a PDF.
                     </p>
                 </div>
 
                 {/* Partie Droite : Boutons séparés gauche/droite ou côte à côte */}
                 <div className="w-full md:w-auto flex flex-row justify-between md:justify-end gap-4 mt-4 md:mt-0">
-                    <a href="/CV_Mhamed_FR.pdf" download="CV_Mhamed_FR.pdf">
+                    <a href="/cv_latex__anglais.pdf" download="CV_Mhamed_Ang.pdf">
                         <Button variant="default" className="gap-2 min-w-[140px]">
                             <Download size={18} />
-                            CV Français
-                        </Button>
-                    </a>
-                    
-                    <a href="/cv_latex__anglais.pdf" download="CV_Mhamed_Ang.pdf">
-                        <Button variant="secondary" className="gap-2 min-w-[140px]">
-                            <Download size={18} />
-                            CV English
+                            Download CV
                         </Button>
                     </a>
                 </div>

@@ -3,26 +3,26 @@ import { Users, Trophy, Lightbulb } from "lucide-react";
 
 const activities = [
   {
-    title: "Responsable Cellule Projet",
+    title: "Project Cell Manager",
     organization: "Fintech Club",
     description:
-      "Coordination des membres pour participer à des hackathons et proposer des idées innovantes dans le domaine de la Fintech.",
+      "Coordinated members to take part in hackathons and propose innovative ideas in the Fintech field.",
     icon: Lightbulb,
     color: "accent",
   },
   {
-    title: "Responsable Cellule Jeux Culturels",
+    title: "Cultural Games Cell Manager",
     organization: "Olympiades ENSIAS",
     description:
-      "Organisation des activités de la journée, encadrement des équipes et animation des événements pour garantir leur succès.",
+      "Organized the day's activities, supervised teams and hosted events to ensure their success.",
     icon: Trophy,
     color: "primary",
   },
   {
-    title: "Membre du Club Enactus",
+    title: "Enactus Club Member",
     organization: "ENSIAS",
     description:
-      "Gestion du sponsoring, établissement de partenariats et recherche de financements pour soutenir les activités et événements.",
+      "Managed sponsorship, built partnerships and sought funding to support the club's activities and events.",
     icon: Users,
     color: "accent",
   },
@@ -60,14 +60,13 @@ export const ExtracurricularSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Users size={18} />
-            Engagement
+            Involvement
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Activités <span className="text-gradient">Parascolaires</span>
+            Extracurricular <span className="text-gradient">Activities</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Mon engagement associatif et mes responsabilités au sein de clubs
-            étudiants.
+            My involvement and responsibilities within student clubs.
           </p>
         </motion.div>
 
@@ -116,7 +115,7 @@ export const ExtracurricularSection = () => {
           className="bg-card rounded-xl p-8 shadow-card border border-border"
         >
           <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
-            📸 Galerie Photos - Hackathons
+            📸 Photo Gallery - Hackathons
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <motion.div

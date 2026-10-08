@@ -3,69 +3,69 @@ import { GraduationCap, BookOpen, Calendar } from "lucide-react";
 
 const semesters = [
   {
-    title: "Semestre 1 - ENSIAS",
-    period: "Sept 2023 - Jan 2024",
+    title: "Semester 1 - ENSIAS",
+    period: "Sep 2023 - Jan 2024",
     modules: [
       "Business Intelligence Analytics",
-      "Algorithmique et structures de données",
-      "Architectures des ordinateurs",
-      "Éléments de recherche opérationnelle",
-      "Éthique, métiers & projet de challenge",
-      "Gestion, économie et finance 1",
-      "Langue, communication et développement personnel",
-      "Statistiques et probabilité appliquée",
+      "Algorithms and Data Structures",
+      "Computer Architecture",
+      "Operations Research Fundamentals",
+      "Ethics, Careers & Challenge Project",
+      "Management, Economics and Finance 1",
+      "Language, Communication and Personal Development",
+      "Applied Statistics and Probability",
     ],
   },
   {
-    title: "Semestre 2 - ENSIAS",
-    period: "Fév 2024 - Juin 2024",
+    title: "Semester 2 - ENSIAS",
+    period: "Feb 2024 - Jun 2024",
     modules: [
-      "Base de données",
-      "Économie, gestion et finance 2",
-      "Fondements de l'informatique",
-      "Programmation orientée objet",
-      "Réseaux et système",
-      "Langue, communication et développement personnel 2",
+      "Databases",
+      "Economics, Management and Finance 2",
+      "Foundations of Computer Science",
+      "Object-Oriented Programming",
+      "Networks and Systems",
+      "Language, Communication and Personal Development 2",
     ],
   },
   {
-    title: "Semestre 3 - ENSIAS",
-    period: "Sept 2024 - Jan 2025",
+    title: "Semester 3 - ENSIAS",
+    period: "Sep 2024 - Jan 2025",
     modules: [
-      "Administration systèmes",
-      "Culture entrepreneuriale",
-      "Langues, communication et développement personnel 2i",
-      "Machine learning",
-      "Modèle TCP/IP architecture client/serveur",
-      "Statistiques et analyse de données",
-      "Systèmes d'information et modélisation objet",
-      "Technologies et développement web",
+      "Systems Administration",
+      "Entrepreneurial Culture",
+      "Language, Communication and Personal Development 3",
+      "Machine Learning",
+      "TCP/IP Model and Client/Server Architecture",
+      "Statistics and Data Analysis",
+      "Information Systems and Object Modeling",
+      "Web Technologies and Development",
     ],
   },
   {
-    title: "Semestre 4 - ENSIAS",
-    period: "Fév 2025 - Juin 2025",
+    title: "Semester 4 - ENSIAS",
+    period: "Feb 2025 - Jun 2025",
     modules: [
-      "Conduite de projets informatiques & processus développement",
+      "IT Project Management & Development Processes",
       "Data analytics",
       "Databases for BI and Analytics",
-      "Langue, communication et développement personnel IV",
-      "Management avancé",
-      "Module d'ouverture 2",
-      "Projet fédérateur de deuxième année",
-      "Sécurité et cloud computing",
+      "Language, Communication and Personal Development 4",
+      "Advanced Management",
+      "Elective Module 2",
+      "Second-Year Capstone Project",
+      "Security and Cloud Computing",
     ],
   },
   {
-    title: "Semestre 5 - ENSEEIHT",
-    period: "Sept 2025 - Jan 2026",
+    title: "Semester 5 - ENSEEIHT",
+    period: "Sep 2025 - Jan 2026",
     modules: [
       "Soft and Human Skills 3 (English, Spanish, Sport, Careers and Management)",
-      "Programmation Fonctionnelle et Traduction des Langages",
-      "Théorie des Automates et des Langages, Théorie des Graphes",
-      "Génie du Logiciel et des Systèmes",
-      "Optimisation et RO",
-      "Systèmes concurrents et communicants",
+      "Functional Programming and Language Translation",
+      "Automata and Language Theory, Graph Theory",
+      "Software and Systems Engineering",
+      "Optimization and Operations Research",
+      "Concurrent and Communicating Systems",
     ],
   },
 ];
@@ -102,15 +102,15 @@ export const EngineeringSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
             <GraduationCap size={18} />
-            Formation d'Ingénieur
+            Engineering Degree
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Parcours <span className="text-gradient">Académique</span>
+            Academic <span className="text-gradient">Background</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les modules et compétences acquises au fil de ma formation
-            en ingénierie informatique spécialisée en Business Intelligence,
-            Analytics, HPC et Big Data.
+            Modules and skills acquired throughout my computer engineering
+            studies, specialized in Business Intelligence, Analytics, HPC and
+            Big Data.
           </p>
         </motion.div>
 
