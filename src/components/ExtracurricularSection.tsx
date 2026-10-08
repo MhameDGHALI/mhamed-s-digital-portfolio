@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { Users, Trophy, Lightbulb } from "lucide-react";
+import { Users } from "lucide-react";
 
 const activities = [
+  {
+    title: "Volunteer",
+    organization: "Erasmus Toulouse",
+    description:
+      "Helping organize events for international students and welcoming them to the city.",
+  },
   {
     title: "Project Cell Manager",
     organization: "Fintech Club",
     description:
       "Coordinated members to take part in hackathons and propose innovative ideas in the Fintech field.",
-    icon: Lightbulb,
-    color: "accent",
   },
   {
     title: "Cultural Games Cell Manager",
     organization: "Olympiades ENSIAS",
     description:
       "Organized the day's activities, supervised teams and hosted events to ensure their success.",
-    icon: Trophy,
-    color: "primary",
   },
   {
-    title: "Enactus Club Member",
-    organization: "ENSIAS",
+    title: "Sponsorship Cell Manager",
+    organization: "Enactus ENSIAS",
     description:
       "Managed sponsorship, built partnerships and sought funding to support the club's activities and events.",
-    icon: Users,
-    color: "accent",
   },
 ];
 
@@ -75,7 +75,7 @@ export const ExtracurricularSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6 mb-12"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
         >
           {activities.map((activity, index) => (
             <motion.div
@@ -83,18 +83,6 @@ export const ExtracurricularSection = () => {
               variants={itemVariants}
               className="bg-card rounded-xl p-6 shadow-card border border-border hover-lift"
             >
-              <div
-                className={`w-12 h-12 rounded-lg ${
-                  activity.color === "accent" ? "bg-accent/10" : "bg-primary/10"
-                } flex items-center justify-center mb-4`}
-              >
-                <activity.icon
-                  className={
-                    activity.color === "accent" ? "text-accent" : "text-primary"
-                  }
-                  size={24}
-                />
-              </div>
               <h3 className="text-lg font-semibold text-foreground mb-1">
                 {activity.title}
               </h3>
@@ -115,7 +103,7 @@ export const ExtracurricularSection = () => {
           className="bg-card rounded-xl p-8 shadow-card border border-border"
         >
           <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
-            📸 Photo Gallery - Hackathons
+            Photo Gallery - Hackathons
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <motion.div

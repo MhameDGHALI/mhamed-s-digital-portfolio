@@ -39,7 +39,7 @@ export const WelcomeSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 text-center lg:text-left max-w-2xl">
-              Computer engineering student passionate about Data Engineering,
+              HPC & Big Data Engineering student passionate about Data,
               Business Intelligence and Big Data. Double degree ENSIAS (Morocco)
               → ENSEEIHT (Toulouse).
             </p>

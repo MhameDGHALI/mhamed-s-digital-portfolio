@@ -10,8 +10,8 @@ export const Footer = () => {
               Mhamed El Ghali <span className="text-accent">Bellahbib</span>
             </h3>
             <p className="text-primary-foreground/70 text-sm">
-              Computer engineering student specializing in Business
-              Intelligence, Data Engineering, HPC and Big Data.
+              HPC & Big Data Engineering student passionate about Data,
+              Business Intelligence and Big Data.
             </p>
           </div>
 

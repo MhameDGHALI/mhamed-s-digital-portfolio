@@ -3,6 +3,18 @@ import { GraduationCap, BookOpen, Calendar } from "lucide-react";
 
 const semesters = [
   {
+    title: "Preparatory Classes (CPGE) - Lycée Moulay Idriss",
+    period:"Sep 2021 - Jun 2023",
+    modules: [
+      "Advanced Mathematics",
+      "Advanced Physics",
+      "Computer Science",
+      "French - English Translation",
+      "Chemistry",
+      "Engineering Sciences",
+    ],
+  },
+  {
     title: "Semester 1 - ENSIAS",
     period: "Sep 2023 - Jan 2024",
     modules: [
@@ -66,6 +78,29 @@ const semesters = [
       "Software and Systems Engineering",
       "Optimization and Operations Research",
       "Concurrent and Communicating Systems",
+    ],
+  },
+  {
+    title: "Semester 6 - ENSEEIHT",
+    period: "Feb 2026 - Jun 2026",
+    modules: [
+      "Soft and Human Skills 3 (English, Spanish, Sport, Careers and Management)",
+      "Concurrent and Communicating Applications, Databases",
+      "Advanced Linear Algebra",
+      "Control and Multiresolution Analysis",
+      "Geometric Modeling",
+      "Machine Learning and Optimization",
+    ],
+  },
+  {
+    title: "Semester 7 - ENSEEIHT",
+    period: "Sep 2026 - Jan 2027",
+    modules: [
+      "Soft and Human Skills 3 (English, Careers and Management)",
+      "Distributed Systems and Security",
+      "Advanced Statistical Machine Learning",
+      "High Performance Scientific Computing",
+      "Inverse Problems",
     ],
   },
 ];
